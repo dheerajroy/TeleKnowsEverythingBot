@@ -13,7 +13,7 @@ def send_welcome(message):
 
 
 @bot.message_handler()
-def send_welcome(message):
+def reply(message):
     reply = "Could'nt find any information."
     try:
         reply = wikipedia.summary(message.text)
